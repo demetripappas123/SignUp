@@ -1,0 +1,176 @@
+*{
+    margin:0;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+a{
+    color: white;
+}
+
+html{
+    font-size: medium;
+}
+
+@font-face { 
+    font-family: 'odin';
+    src: url('Norse-Bold.otf') format('opentype');
+}
+
+body{
+    height: 100vh;
+    background-color: rgb(15,15,15);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.page{
+    margin:0 auto;
+    display: flex;
+    width: 60%;
+}
+
+.left{
+   width: 40%;
+   overflow: hidden;
+   position: relative;
+   display: flex;
+   justify-content: center;
+}
+
+.bgImg{
+   height: 100vh;
+}
+
+.right{
+    width:60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.top.third, .lower.third{
+   background-color: rgb(240,240,240);
+   height: 35%;
+}
+
+.top.third{
+    display:flex;
+    flex-direction:column;
+    gap:10%;
+    padding: 15% 10% 5% 5%;
+    font-size:1.2rem;
+    font-weight: bold;
+}
+
+.middle.third{
+    height:30%;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+    position: relative;
+}
+
+.odin{
+    position: absolute;
+    top: 21.8125%;
+    width: 100%;
+    background-color: rgb(0,0,0,0.5);
+    color: white;
+    font-size: 5rem;
+    padding: 8px;
+    display:flex;
+    gap: 0.5%;
+    align-items: center;
+    justify-content: center;
+    font-family: 'odin';
+}
+
+.credits{
+    position:absolute;
+    bottom: 1%;
+    color: white;
+    font-size: 0.7rem;
+}
+
+#odin{
+    height: 15%;
+    width: 15%;
+}
+
+.inputs{
+    padding: 2% 5% 5% 5%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+}
+
+.inputs>div{
+    width: 35%;
+    display:flex;
+    flex-direction: column;
+    justify-content: start;
+    margin-right:5%;
+    font-size: 0.7rem;
+}
+
+div>input{
+    width: 100%;
+   border-radius: 3px;
+   border: 1px solid lightgray;
+   aspect-ratio: 8/1;
+}
+
+.inputHeader{
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-left: 35px;
+    margin-top:15px;
+}
+
+#fancyId{
+    color: black;
+}
+
+.lower.third{
+    width:100%;
+    display: flex;
+    justify-content: start;
+}
+.thirdContainer{
+    margin-top:30px;
+    margin-left:35px;
+    width: 40%;
+    display:flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+button{
+    width: 70%;
+    aspect-ratio: 5/1;
+    background-color: #596D48;
+    color: white;
+    font-size: 0.8rem;
+    border-radius: 5px;
+    
+}
+
+#confirm:invalid, #password:invalid{
+    border-color: red;
+}
+
+#confirm:invalid:focus, #password:invalid:focus{
+    box-shadow: 0 0 6px 2px rgba(255, 0, 0, 0.6);
+}
+
+#confirm:valid, #password:valid{
+    border-color: green;
+}
+
+#confirm:valid:focus, #password:valid:focus{
+    box-shadow: 0 0 6px 2px rgba(0, 255, 0, 0.6);
+}
+
+input:focus{
+    border-color:blue;
+    box-shadow: 0 4px 10px rgba(0,123,255,0.6);
+}
